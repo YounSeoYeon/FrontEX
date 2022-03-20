@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>DOM 프로그래밍1</title>    
+    <link rel="stylesheet" href="dom.css">
+    <script src="dialog.js"></script>
+    <script type="module" src="es6.js"></script> 
+</head>
+<body>
+    <section id="s15">
+        <h1>15. BOM API 사용하기</h1>
+        <div>
+            <a class="btn btn-open" href="">새창띄우기</a>
+            <a class="btn btn-close" href="">새창닫기</a>
+            <a class="btn btn-back" href="">뒤로</a>
+            <a class="btn btn-forward" href="">앞으로</a>
+            <input type="text" class="input-url">
+            <a class="btn btn-go" href="">이동</a>
+            <a class="btn btn-count-down" href="">카운트다운</a>
+        </div>
+        <div>
+            <div class="count">10</div>
+            <iframe src="inner-page.html"></iframe>
+        </div>
+    </section>
+    <section id="s14">
+        <h1>14. 대화상자 띄우기</h1>
+        <div>
+            <a class="btn-del" href="">삭제하기</a>
+        </div>
+        <!-- <div class="screen">
+            <div class="dlg">
+                <div class="title">
+                    알림
+                </div>
+                <div class="view">
+                    정말 삭제하시겠습니까?<br> 정말?
+                </div>
+                <div class="action-panel">
+                    <a href="" class="btn btn-strong">OK</a>
+                    <a href="" class="btn ml-2">CANCEL</a>
+                </div>
+            </div>
+        </div>  -->
+    </section>
+    <hr>
+    <section id="s13">
+        <h1>13. DND API를 이용한 노드 자리 바꾸기 </h1>
+        <div class="box">            
+            <div class="row" draggable="true">
+                <div>item1</div>
+            </div>
+            <div class="row" draggable="true">
+                <div>item2</div>
+            </div>
+            <div class="row" draggable="true">
+                <div>item3</div>
+            </div>
+            <div class="row" draggable="true">
+                <div>item4</div>
+            </div>
+            <div class="row" draggable="true">
+                <div>item5</div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="s12">
+        <h1>12. 노드 조작하기(생성/추가/수정/삭제) : 목록관리</h1>
+        <section class="form-section">
+            <h1>회원 등록 폼</h1>
+            <form class="form">
+                <fieldset class="fieldset-none">
+                    <legend class="d-none">회원정보</legend>
+                    <div>
+                        <label>이름:</label>
+                        <input class="input mt-2" type="text" name="uname" autocomplete="off" minlength="4글" required>
+                    </div>
+                    <div class="mt-3">
+                        <input class="btn btn-strong" type="submit" value="등록" name="btn-reg">
+                        <a class="btn" href="">취소</a>
+                    </div>
+                </fieldset>                
+            </form>
+        </section>
+        <section class="list-section">
+            <header class="section-header">
+                <h1>회원목록</h1>
+                <a class="btn btn-del-first ml-auto" href="">첫항목 삭제하기</a>
+                <a class="btn btn-del-all" href="">일괄삭제</a>
+                <a class="btn btn-disable" href="">일괄 비활성</a>
+                <a class="btn btn-change" href="">바꾸기</a>
+            </header>
+            <section>
+                <h1>활성회원</h1>
+                <ul class="list">
+                    <li class="item d-flex"><input type="checkbox" class="mr-2">A1<a class="ml-auto icon icon-close btn-del" href="">삭제</a></li>
+                    <li class="item d-flex"><input type="checkbox" class="mr-2">A2<a class="ml-auto icon icon-close btn-del" href="">삭제</a></li>
+                    <li class="item d-flex"><input type="checkbox" class="mr-2">A3<a class="ml-auto icon icon-close btn-del" href="">삭제</a></li>
+                </ul>
+            </section>
+            <section>
+                <h1>비활성회원</h1>
+                <ul class="list disabled-list">
+                    <li class="item d-flex"><input type="checkbox" class="mr-2">A1<a class="ml-auto icon icon-close btn-del" href="">삭제</a></li>
+                    <li class="item d-flex"><input type="checkbox" class="mr-2">A2<a class="ml-auto icon icon-close btn-del" href="">삭제</a></li>
+                    <li class="item d-flex"><input type="checkbox" class="mr-2">A3<a class="ml-auto icon icon-close btn-del" href="">삭제</a></li>
+                </ul>
+            </section>
+        </section>
+    </section>
+    <hr>
+    <section id="s11">
+        <h1>11. 이벤트 다루기(drag & drop) : 데이터 드래그 & 드랍</h1>
+        <div class="drop-zone">
+            <div class="error-message d-none">파일만 업로드 할 수 있습니다.</div>
+        </div>
+        <div class="upload-box">
+            
+        </div>
+    </section>
+    <hr>
+    <section id="s10">
+        <h1>10. 이벤트 다루기(mouse move/down/up) : 박스 드래그 & 드랍</h1>
+        <div class="box">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+    </section>
+    <hr>
+    <section id="s9-1">
+        <h1>9-1. 이벤트 다루기(wheel) : 페이지 넘기기</h1>
+        <div class="page-box">
+            <div class="page active"><img src="images/1.jpg"></div>
+            <div class="page"><img src="images/2.jpg"></div>
+            <div class="page"><img src="images/3.jpg"></div>
+            <div class="page"><img src="images/4.jpg"></div>
+            <div class="page"><img src="images/5.jpg"></div>
+            <div class="page"><img src="images/6.jpg"></div>
+            <div class="page"><img src="images/7.jpg"></div>
+        </div>
+    </section>
+    <hr>
+    <section id="s9" tabindex="0">
+        <h1>9. 이벤트 다루기(wheel) : 사진 갤러리</h1>
+        <div class="img-list-box">
+            <ul>
+                <li class="current"><img src="images/1.jpg"></li>
+                <li><img src="images/2.jpg"></li>
+                <li><img src="images/3.jpg"></li>
+                <li><img src="images/4.jpg"></li>
+                <li><img src="images/5.jpg"></li>
+                <li><img src="images/6.jpg"></li>
+                <li><img src="images/7.jpg"></li>
+                <li><img src="images/8.jpg"></li>
+                <li><img src="images/9.jpg"></li>
+            </ul>
+        </div>
+        <div class="show-room">
+            <img src="images/1.jpg">
+        </div>
+    </section>
+    <hr>
+    <section id="s8-1">
+        <h1>8-1. 이벤트 다루기(key/focus/blur/tabindex) : 입력 폼의 유효성 검사하기</h1>
+        <div>
+            <input tabindex="0" type="text">
+            <input tabindex="2" type="text">
+            <input tabindex="1" type="text">
+        </div>
+        <div class="box">
+            <ul>
+                <li tabindex="0">1</li>
+                <li tabindex="0">2</li>
+                <li tabindex="0">3</li>
+            </ul>
+        </div>
+    </section>
+    <section id="s8">
+        <h1>8. 스타일 다루기(Pseudo Class/focus/blur) : 입력 폼의 유효성 검사하기</h1>
+        <form novalidate>
+            <fieldset>
+                <legend>회원정보 입력 폼</legend>
+                <div>
+                    <label>사용자 아이디(필수)</label>
+                    <!-- <input type="text" name="uname" required minlength="4" maxlength="10" placeholder="4글자 이상의 문자를 입력하세요."> -->
+                    <div class="uname-input" contenteditable="true"></div>
+                    <input type="hidden" name="uname" >
+                    <div class="msg d-none">아이디가 중복되었습니다.</div>
+                </div>
+                <div>
+                    <label>연락처(필수)</label>
+                    <input type="text" required placeholder="구분자 -를 포함하세요. 예)010-1111-2222" pattern="^01[0169]-\d{3,4}-\d{4}$">
+                </div>
+                <div>
+                    <label>코딩수준(필수)</label>
+                    <input type="radio" name="level" value="상" required><span>상</span>
+                    <input type="radio" name="level" value="중"><span>중</span>
+                    <input type="radio" name="level" value="하"><span>하</span>
+                </div>
+                <div>
+                    <label>나이(필수)</label>
+                    <input type="number" required min="10" max="100">
+                </div>
+                <div>
+                    <input type="submit" value="등록" >
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <section id="s7">
+        <h1>7. 스타일 다루기(ComputedStyle/...) : 선택된 아이템을 이동하기</h1>
+        <div class="box">
+            <div class="src-item-list">
+                <div class="src-item item selected">1</div>
+                <div class="src-item item">2</div>
+                <div class="src-item item">3</div>
+            </div>
+            <div class="dst-item-list">
+                <div class="dst-item item" >a</div>
+                <div class="dst-item item" style="left:450px;top:160px;">b</div>
+                <div class="dst-item item" style="left:330px;top:250px;">c</div>
+            </div>
+        </div>
+    </section>
+    <hr>    
+    <section id="s6">
+        <h1>6. 스타일 다루기(classList) : 아코디언 만들기</h1>
+        <div class="box">
+            <h3 class="accordion-header active">제목1</h3>
+            <div class="accordion-content">
+                <p>
+                    Kasd sed eos amet at at. Ea labore no ipsum consetetur dolor gubergren, invidunt dolores diam amet sit ipsum sed.
+                </p>
+            </div>
+            <h3 class="accordion-header">제목2</h3>
+            <div class="accordion-content">
+                <p>
+                    Et no labore dolor invidunt eirmod elitr consetetur. Voluptua vero takimata diam elitr invidunt, et sanctus sit et clita amet,.
+                </p>
+            </div>
+            <h3 class="accordion-header">제목3</h3>
+            <div class="accordion-content">
+                <p>
+                    Tempor diam lorem vero invidunt eos gubergren dolor no. Diam amet et dolores stet et elitr, takimata rebum magna kasd.
+                </p>
+            </div>
+            <h3 class="accordion-header">제목4</h3>
+            <div class="accordion-content">
+                <p>
+                    Ipsum voluptua dolor kasd magna sea takimata sit labore. Elitr duo et tempor stet gubergren accusam eirmod, ut sed at.
+                </p>
+            </div>
+            <h3 class="accordion-header">제목5</h3>
+            <div class="accordion-content">
+                <p>
+                    Invidunt diam lorem kasd diam amet dolores gubergren, kasd sea clita et est consetetur ipsum lorem sit. Diam nonumy ea.
+                </p>
+            </div>
+
+        </div>
+    <hr>
+    <section id="test">
+        <div class="box">
+            <div class="item"></div>
+        </div>
+    </section>
+    <section id="s5">
+        <h1>5. 스타일 다루기(className) : 아이템 이동</h1>
+        <div class="box">
+            <ul>
+                <li class="card-1th">1</li>
+                <li class="card-2th">2</li>
+                <li class="card-3th">3</li>
+            </ul>
+            <div class="btn-list">
+                <a class="btn-prev" href="">이전</a>
+                <a class="btn-next" href="">다음</a>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="s4">
+        <h1>4. 스타일 다루기 : 값 입력과 동적으로 박스 스타일 변경</h1>
+        <div class="box">
+            <div class="tool-box">
+                <div>
+                    <label for="">style : solid</label>
+                    <select class="style-input">
+                        <option value="solid">solid</option>
+                        <option value="dashed">dashed</option>
+                        <option value="dotted">dotted</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="">width : 1px</label>
+                    <input class="width-input" type="range" min="0" max="100" value="1" >
+                </div>
+                <div>
+                    <label for="">radius : 0px</label>
+                    <input class="radius-input" type="range" min="0" max="100" value="1" >
+                </div>
+                <div>
+                    <label for="">color : #000000</label>
+                    <input class="color-input" type="color" value="#000000" >
+                </div>
+                <div>
+                    <div>output:</div>
+                    <div class="output"></div>
+                </div>
+            </div>            
+            <div class="preview-box">
+                <div class="item"></div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="s3">
+        <h1>3. <a href="https://www.newlecture.com">이벤트</a> 객체 : 개선된 계산기</h1>
+        <form>
+            <div class="box">
+                <input type="text" value="0" dir="rtl">
+
+                <input type="button" value="%">
+                <input type="button" value="CE">
+                <input type="button" value="C">
+                <input type="button" value="/">
+
+                <input type="submit" value="7">
+                <input type="submit" value="8">
+                <input type="button" value="9">            
+                <input type="button" value="x">
+                
+                <input class="num" type="button" value="1" >
+                <input class="num" type="button" value="2" >
+                <input class="num" type="button" value="3">
+                <input class="num" type="button" value="4">
+                <input class="num" type="button" value="5">
+                <input type="button" value="6">
+                
+
+                <input type="button" value="+">
+                <input type="button" value="-">
+                <input type="button" value="/">
+                <input type="button" value="=">
+            </div>
+        </form>
+    </section>
+    <hr>
+    <section id="s2">
+        <h1>2. DOM 속성 다루기 : 계산기</h1>
+        <div>
+            <input class="x-input" type="text" value="0">
+            <input class="y-input" type="text" value="0">
+            <input class="button" type="button" value="덧셈">
+            <span>계산결과 : <span>0</span></span>
+        </div>
+    </section>
+    <hr>
+    <section id="s1">
+        <h1>1. 노드 선택방법</h1>
+        <div>
+            <input class="input" type="text">
+            <input class="button" type="button" value="click">
+        </div>
+    </section>
+    <hr>
+    <input type="button" value="click" id="btn-print">
+
+    
+</body>
+</html>

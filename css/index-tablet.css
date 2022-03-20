@@ -1,0 +1,29 @@
+@media all and (min-width:720px) {
+
+    /* ==== outside block =========================================== */
+
+    .cafe{
+        /* background: yellowgreen; */
+    }
+
+    
+    /* ==== inside block / content block =========================================== */
+
+    .top-menu{
+       /* ul이 가운데 정렬될 수 있게 한다. */
+       
+       /* item layout */
+       display: flex;
+       justify-content: center;
+    }
+    
+    .top-menu>ul{
+        /* 너비를 5개만 보일 정도로 크기를 한정한다. */
+        width:580px;
+    }
+
+    .top-menu li:first-child{
+        margin-left:0;
+    }
+    
+}

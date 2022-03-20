@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background-color: #D9D9DF;
+}
+
+html {
+    height: 100%;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 0;
+}
+
+.h-show {
+    font-size: 16px;
+}
+
+.f-none {
+    font-size: 0;
+}
+
+.line {
+    height: 14px;
+    background-color: #D9D9DF;
+}
+
+.thin-line {
+    height: 2px;
+    background-color: #D9D9DF;
+}
+
+.empty-div {
+    display: inline-block;
+    background-color: white;
+    /* width: 14vmin; */
+    height: 44px;
+    /* flex: 3; */
+}
+
+.right-arrow-div {
+    display: block;
+    background-image: url("../images/right-arrow.png");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 44px;
+    height: 44px;
+    float: right;
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>관리자 페이지</h1>
+
+        <div>메뉴버튼</div>
+    </header>
+    <section>
+        <h1>공지사항 등록</h1>
+        <form action = "reg.html">
+        <div>
+            <section>
+                <h1>제목</h1>
+                <label for="title" hidden>제목</label>
+                <input type = "text" name = "title" id = "title" placeholder="제목을 입력하세요"> 
+            </section>    
+        </div><br>
+    
+        <div>
+            <article>
+                <h1>내용</h1>
+                <fieldset name = "contents">
+                    <p>
+                    -겨울을 맞아 건강에 좋은 새로운<br> 
+                    따뜻한 차가 추가 되었습니다.
+                    </p>
+                    <div>
+                        <img src = "../../images/23.jpg" height = "50px">
+                    </div>
+                    <section>
+                        <h1>알랜드 커피</h1>
+                        <p>4,500원</p>
+                    </section>
+                    <div>
+                        <label for = "minus" hidden>내용에 메뉴 삭제</label>
+                        <input id = "minus" type = "button" value = "―">
+                    </div>
+                </fieldset>
+            </article>
+        </div>
+        <br>
+        <div>
+            <button id = "plus"><a href = "" target="_blank">＋</a></button>
+            <label for = "plus">내용에 메뉴추가</label>
+        </div>
+        <br>
+        <nav>
+            <input type = "submit" value = "공지등록">
+            <input type = "button" value = "취소하기">
+            <button><a href = "../../index.html">공지목록</a></button>
+        </nav>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@media all and (min-width:1000px){
+
+/*=========================== inside block =================================*/
+
+
+/* ---------rland-menu---------- */
+
+.menu-item form{
+
+    /* layout */
+    padding: 25px 200px 25px 200px;
+
+    /* layout-item */
+    grid-template:
+    "img menu no no no" 20px
+    "img price no put-btn order-btn" 25px
+    "img iced large-box put-btn order-btn"45px
+    / 100px 1fr 1fr 90px 90px;
+
+}
+
+}

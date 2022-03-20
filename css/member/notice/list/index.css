@@ -1,0 +1,213 @@
+@import url(../../style.css);
+
+.header {
+    width: 100%;
+    height: 44px;
+}
+
+.notice-list {
+    height: 381px;
+}
+
+.notice-contents  {
+    min-height: 330px;       
+}
+
+/* ============ content box ============ */
+
+/* --------------- header --------------- */
+.header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .header>h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: normal;        
+        font-size: 16px;
+        color: #fff;
+        margin-left: 19px;
+    }
+
+    .header>div{
+        margin-right: 15px;
+    }
+
+        .header>div>a {      
+            display: inline-block;      
+            width: 23px;
+            height: 16px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='16' viewBox='0 0 23 16'%3E%3Cg id='Icon_feather-menu' data-name='Icon feather-menu' transform='translate(-3.5 -8)'%3E%3Cpath id='패스_5' data-name='패스 5' d='M4.5,18h21' transform='translate(0 -2)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cpath id='패스_6' data-name='패스 6' d='M4.5,9h21' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cpath id='패스_7' data-name='패스 7' d='M4.5,27h21' transform='translate(0 -4)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-position: left top;
+            overflow: hidden;
+            text-indent: -999px;
+            
+        }
+
+/* --------------- notice-list --------------- */
+
+.notice-list {
+    margin: 21px 28px 0 23px;
+}
+
+    .notice-list>header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .notice-list>header>h1 {
+            display: inline-block;
+            width: 198px;
+            height: 20px;
+            font-family: dx-hotplace-std, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+        }
+
+        .notice-list>header>div>a {
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            overflow: hidden;
+            text-indent: -999px;
+
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18.621' height='18.621' viewBox='0 0 18.621 18.621'%3E%3Cg id='Icon_feather-search' data-name='Icon feather-search' transform='translate(1.5 1.5)'%3E%3Cpath id='패스_17' data-name='패스 17' d='M17.824,11.162A6.662,6.662,0,1,1,11.162,4.5,6.662,6.662,0,0,1,17.824,11.162Z' transform='translate(-4.5 -4.5)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cpath id='패스_18' data-name='패스 18' d='M28.62,28.62l-3.645-3.645' transform='translate(-13.62 -13.62)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+        }
+
+/* --------------- notice-contents --------------- */
+
+    .notice-contents  {        
+        border-top: 1px solid #707070;
+        margin-top: 35px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }  
+
+        .notice-contents>article {
+            display: inline-block;
+            min-height: 43px;
+            width: 100%;
+            margin-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #707070;  
+            
+            display: flex;
+            flex-direction: column;
+        }
+
+        .notice-contents>article>h1>a {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+            font-size: 13px;
+            color: #000;
+        }
+
+        .notice-contents>article>span {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+            font-size: 10px;
+            color: #000;
+
+            margin-left: auto;
+        }
+
+/* --------------- content-img --------------- */
+
+        .content-img {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+            font-size: 13px;
+            color: #000;
+
+            display: flex;
+            flex-direction: column;
+
+            margin-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #707070;
+        }
+
+            .content-img summary {
+                cursor: pointer;
+                list-style: none;
+            }
+
+            .content-img details[open]>p {
+                padding-left: 9px
+            }
+
+            
+
+        .content-img div {
+            display: grid;
+            grid-template-columns: 48px 66px;
+            grid-template-rows: repeat(2, 24px);
+            column-gap: 16px;
+            margin-top: 11px;
+        }
+
+            .content-img div>img {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                grid-column: 1/2;
+                grid-row: 1/3;
+
+                justify-self: center;
+                align-self: center;
+            }
+
+            .content-img div>:nth-child(2) {
+                font-family: 'Nanum Gothic', sans-serif;
+                font-weight: bold;
+                font-size: 13px;
+                grid-column: 2/3;
+                grid-row: 1/2;
+
+                justify-self: start;
+                align-self: center;
+            }
+
+            .content-img div>:nth-child(3) {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: normal;
+                font-size: 11px;
+                grid-column: 2/3;
+                grid-row: 2/3;
+
+                justify-self: start;
+                align-self: center;
+            }
+
+            .content-img span {
+                font-size: 10px;
+                margin-left: auto;                
+            }
+    
+/* --------------- notice-more --------------- */
+
+    .notice-more {
+        display: inline-block;
+        margin-top: 19px;
+        margin-left: -11px;
+        
+    }
+
+        .notice-more>a {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+            font-size: 14px;
+            color: red;
+            display: inline-block;
+            width: 308px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid red;
+            text-align: center;
+            line-height: 40px;
+        }

@@ -1,0 +1,9 @@
+body{
+    margin:0;
+}
+
+.header-welcome-bg-box{
+    height: 244px;
+    background: linear-gradient(#A24F17, transparent),
+        url("../../images/1.jpg") no-repeat center/cover;
+}

@@ -1,0 +1,12 @@
+.btn{
+    padding:4px 80px;
+}
+
+.btn-ok{
+    background-color: blue;
+}
+
+.btn-cancel{    
+    background-color: gray;
+
+}

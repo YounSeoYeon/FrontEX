@@ -1,0 +1,62 @@
+@media all and (min-width:720px){
+
+/*=========================== inside block =================================*/
+
+
+/* ---------rland-menu---------- */
+.menu-item form{
+
+    /* layout */
+    padding: 25px 120px 25px 120px;
+
+    /* layout-item */
+    grid-template:
+    "img menu put-btn order-btn" 35px
+    "img price put-btn order-btn" 20px
+    "img check put-btn order-btn" 35px
+    / 100px 1fr 85px 85px;
+
+}
+
+    .menu-item form span:nth-child(2){
+
+        /* layout */
+        padding-left: 12px;
+        
+        /* layout-item */
+        align-self: center;
+
+    }
+
+
+    .menu-item form span:nth-child(3){
+
+        /* layout */
+        padding-left: 14px;
+
+        /* layout-item */
+        align-self: center;
+
+    }
+
+    .menu-item .check-box{
+
+        padding-left: 14px;
+
+        grid-area: check;
+        align-self: center;
+        justify-self: start;
+
+
+    }
+
+    .menu-item form span:nth-child(5){
+
+        margin-left: 60px;
+
+        /* layout-item */
+        grid-area: check;
+        
+    }
+
+}

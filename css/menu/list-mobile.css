@@ -1,0 +1,446 @@
+@import url(../reset.css);
+@import url(../style.css);
+@import url(../utils.css);
+@import url(../buttons.css);
+
+
+/*=========================== outside block =================================*/
+
+.header-menuber{
+    
+    /* layout */
+    height: 44px;
+    background-color: #707070;
+
+}
+
+.rland-menu{
+
+    /* layout */
+    padding: 20px 24px 12px 24px;
+
+}
+
+.basket{
+
+    /* layout */
+    /* width: 176px; */
+    height: 79px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+
+    /* layout-item */
+    display: flex;
+
+}
+
+
+/*=========================== inside block =================================*/
+
+/* ---------header---------- */
+
+.header-menuber h1{
+
+    /* layout-item */
+    display: none;
+
+}
+
+.header-menuber>div{
+
+    /* layout */
+    height: 100%;
+    padding: 0 15px 0 15px ;
+
+    /* layout-item */
+    display: flex;
+    align-items: center;
+    
+}
+
+.header-menuber>div div:first-child{
+
+    /* layout-item */
+    flex-grow: 1;
+
+}
+
+/* ---------rland-menu---------- */
+
+.rland-menu header{
+
+    /* layout-item */
+    display: flex;
+    align-items: center;
+
+}
+
+.rland-menu header h1{
+
+    /* text */
+    font-family: 'ONE-Mobile-Regular';
+    font-size: 20px;
+
+    /* layout-item */
+    flex-grow: 1;
+
+}
+
+.rland-menu header div{
+
+    /* layout */
+    width: 19px;
+    height: 19px;
+
+}
+
+/* ---------menu-category---------- */
+
+.rland-menu nav{
+
+    /* layout */
+    margin: 15px 0 15px 0;
+
+}
+
+.rland-menu nav h1{
+    
+    /* layout-item */
+    display: none;
+    
+}
+
+.rland-menu nav div{
+    
+    /* layout */
+    padding-left: 5px;
+    padding-bottom: 12px;
+    border-bottom: solid 1px #707070;
+
+    /* text */
+    font-family: 'Segoe UI', "굴림", "돋움", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.rland-menu nav ul{
+
+    /* layout */
+    margin: 15px auto 0 auto;
+    list-style: none;
+    padding: 0;
+
+    /* layout-item */
+    display: flex;
+    justify-content: space-around;
+}
+
+.rland-menu nav li{
+
+    /* layout */
+    width: 60px;
+    padding: 0 10px 4px 10px;
+
+}
+
+    .rland-menu nav li:first-child{
+
+        /* layout */
+        border-bottom: solid 3px #A24F17;
+
+    }
+
+.rland-menu a{
+
+    /* text */
+    font-family: 'Segoe UI', "굴림", "돋움", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #000;
+    text-align: center;
+
+    /* layout */
+    width: 100%;
+
+    /* layout-item */
+    display: inline-block;
+}
+
+    .rland-menu nav li:first-child a{
+
+        /* text */
+        font-family: 'Segoe UI', "굴림", "돋움", Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: bold;
+        color: #000;
+
+    }
+
+/* ---------menu---------- */
+
+.rland-menu section h1{
+
+    /* layout-item */
+    display: none;
+
+}
+
+.menu-item form{
+
+    /* layout */
+    border-bottom: 0.5px solid #707070;
+    padding: 25px 0 25px 0;
+
+
+    /* layout-item */
+    display: grid;
+    grid-template: 
+    "img menu menu menu" 20px
+    "img price iced large-box" 25px
+    "img no put-btn order-btn" 45px
+    / 100px 1fr 75px 75px;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+    .menu-item form img{
+
+        /* layout */
+        width: 84px;
+        height: 84px;
+        border: 1px solid #707070;
+        border-radius: 50px;
+        object-fit: cover;
+
+        /* layout-item */
+        grid-area: img;
+        justify-self: center;
+        
+
+    }
+
+    .menu-item form span:nth-child(2){
+
+        /* text */
+        font-family: 'ONE-Mobile-Title';
+        font-size: 15px;
+        font-weight: bold;
+        color: #000;
+
+        /* layout-item */
+        grid-area: menu;
+
+    }
+
+    .menu-item form span:nth-child(3){
+
+        /* text */
+        font-family: 'Segoe UI', "굴림", "돋움", Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        text-align: left;
+
+        /* layout */
+        /* width: 50px;
+        height: 17px; */
+
+        /* layout-item */
+        grid-area: price;
+
+    }
+
+    .menu-item .check-box{
+
+        /* layout-item */
+        display: flex;
+        grid-area: iced;
+        justify-self: end;
+        align-items: center;
+
+    }
+
+        .check-box label{
+
+            /* text */
+            font-family: 'Segoe UI', "굴림", "돋움", Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            text-align: center;
+
+            /* layout */
+            width: 40px;
+            height: 17px;
+
+            /* layout-item */
+            order: 2;
+
+        }
+
+        .check-box input{
+
+            /* layout */
+            margin: 0;
+
+            /* layout-item */
+            order: 1;
+        }
+
+    .menu-item form span:nth-child(5){
+
+        /* layout */
+        margin-left: 15px;
+
+        /* layout-item */
+        grid-area: large-box;
+        justify-self: start;
+
+    }
+
+    .menu-item form input:nth-child(7){
+        
+        /* text */
+        font-family: 'Segoe UI', "굴림", "돋움", Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-align: center;
+
+        /* layout */
+        width: 72px;
+        height: 30px;
+        border-radius: 20px;
+        border: 1px solid #A24F17;
+        padding: 0;
+
+        /* layout-item */
+        grid-area: put-btn;
+        justify-self: end;
+
+    }
+
+    .menu-item form input:nth-child(8){
+
+        /* text */
+        font-family: 'Segoe UI', "굴림", "돋움", Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-align: center;
+        color: #FFF;
+
+        /* layout */
+        width: 72px;
+        height: 30px;
+        border-radius: 20px;
+        border: 0px;
+        background-color: #A24F17;
+        padding: 0;
+
+        /* layout-item */
+        grid-area: order-btn;
+        justify-self: end;
+
+    }
+
+/* ---------more-button---------- */
+
+.more-button{
+
+    /* layout */
+    width: 308px;
+    height: 40px;
+    border: 1px solid #A24F17;
+    border-radius: 20px;
+    margin: 12px auto 0 auto;
+
+    /* layout-item */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.more-button a{
+
+    /* text */
+    font-family: 'Segoe UI', "굴림", "돋움", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #A24F17;
+
+    /* layout */
+    margin: 0;
+
+}
+
+/* ---------basket---------- */
+
+.basket div:first-child{
+    
+    /* layout */
+    width: 129px;
+    height: 45px;
+    background-color: #005FFF;
+    border-radius: 23px;
+    margin: 15px 0 0 0;
+    
+    /* layout-item */
+    display: flex;
+    align-items: center;
+
+}
+
+.basket div:first-child a{
+    
+    /* text */
+    font-family: 'Segoe UI', "굴림", "돋움", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    color: #FFF;
+    
+    /* layout */
+    margin-left: 20px;
+
+}
+
+.basket div:nth-child(2){
+
+    /* layout */
+    width: 79px;
+    height: 79px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-left: -32px;
+
+    /* layout-item */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.basket div:nth-child(2) a{
+
+    /* layout */
+    width: 38px;
+    height: 42px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='37.597' height='41.812' viewBox='0 0 37.597 41.812'%3E%3Cg id='장바구니' transform='translate(0.634)'%3E%3Cg id='타원_6' data-name='타원 6' transform='translate(7.667)' fill='none' stroke='%23fff' stroke-width='1'%3E%3Ccircle cx='11' cy='11' r='11' stroke='none'/%3E%3Ccircle cx='11' cy='11' r='10.5' fill='none'/%3E%3C/g%3E%3Cpath id='패스_19' data-name='패스 19' d='M591-1964.418h36.334l-6.7,28.812H597.884Z' transform='translate(-591 1976.918)' stroke='%23fff' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+
+    /* layout-item */
+    display: flex;
+    justify-content: center;
+    
+}
+
+.basket div:nth-child(2) a span{
+
+    /* text */
+    font-family: 'Segoe UI', "굴림", "돋움", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #FFDF00;
+
+    /* layout */
+    margin-top: 10px;
+
+}
+    
+

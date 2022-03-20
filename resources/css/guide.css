@@ -1,0 +1,74 @@
+@import url(style.css);
+
+.header {
+    background-color: #F1F1F5;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    /* border: solid 1px #cccccc; */
+}
+
+.header>.header-menu {
+    /* background-color: #F1F1F5; */
+    background-position: top left;
+    background-image: url("../images/menu.png");
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    /* border: solid 1px #cccccc; */
+}
+
+.header>.header-logo {
+    background-image: url("../images/circle.png");
+    background-size: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    /* border: solid 1px #cccccc; */
+    margin-left: 50px;
+}
+
+.header>.header-srh {
+    background: url("../images/search.png") no-repeat center/cover;
+    width: 44px;
+    height: 44px;
+    background-size: 36px;
+    position: absolute;
+    right: 4px;
+}
+
+#curriculum div {
+    height: 28vmax;
+    background: url("../images/program-ppt-img.PNG") no-repeat center/contain;
+    background-color: white;
+}
+
+.header .title {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    padding-right: 44px
+}
+
+.curriculum-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curriculum-list {
+    border-bottom: solid 1px blanchedalmond;
+    margin-top: 14px;
+    display: inline-block;
+    width: 90%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 16px;
+    
+}

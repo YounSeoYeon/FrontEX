@@ -1,0 +1,33 @@
+.table{
+
+}
+
+.table > thead{
+    
+}
+
+.table > thead td{
+    color:white;
+}
+
+/* -------------------------------------- */
+
+.table-header-strong{
+
+}
+
+.table-header-strong>thead td{
+    
+    
+}
+
+/* ------------------------------- */
+
+.table-border{
+    
+}
+
+.table-border>thead td{
+    
+    border:1px solid gray;    
+}

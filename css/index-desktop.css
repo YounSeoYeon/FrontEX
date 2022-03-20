@@ -1,0 +1,40 @@
+@media all and (min-width:1000px) {
+
+    /* ==== outside block =========================================== */
+   
+
+    .header>div{
+
+        /* layout */
+        width:1000px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .cafe>div{
+        /* layout */
+        width:1000px;
+        margin-left: auto;
+        margin-right: auto;
+
+        /* effect */
+        animation: cafe-bg-v-slide 60s linear infinite;
+
+
+    }
+
+    .rland>div{
+         /* layout */
+         width:1000px;
+         margin-left: auto;
+         margin-right: auto;
+    }
+
+    /* ==== inside block / content block =========================================== */
+
+    .cafe-title{
+        margin-left: 0;
+    }
+
+}

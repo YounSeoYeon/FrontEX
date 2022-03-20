@@ -1,0 +1,325 @@
+/** 뉴렉처 짱
+최종 작성일: 2022.03.02*/
+@import url(../reset.css);
+@import url(../style.css);
+@import url(../utils.css);
+@import url(../buttons.css);
+
+
+/* ㅠㅠ로 검색해서 수정하기*/
+
+
+
+
+.aside-background-black {
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    width: 360px;
+    height: 760px;
+
+}
+
+.aside-background {
+    background-color: #fff;
+    width: 285px;
+    height: 760px;
+
+
+    float: right;
+
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between; /* 처음과 끝이 붙고 사이는 고르게 정렬*/
+
+    margin-top: 22px;
+
+    padding: 0 20px;    /*상하 좌우*/
+}
+
+.img-btn-home {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18.824' height='16' viewBox='0 0 18.824 16'%3E%3Cpath id='Icon_material-home' data-name='Icon material-home' d='M10.529,20.5V14.853h3.765V20.5H19V12.971h2.824L12.412,4.5,3,12.971H5.824V20.5Z' transform='translate(-3 -4.5)'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    display: inline-block;
+    width: 18.82px;
+    height: 16px;
+
+    text-indent: -999px;
+    cursor: pointer;
+
+}
+
+.img-btn-close {
+    background-image: url("data:image/svg+xml,%3Csvg id='Icon_material-close' data-name='Icon material-close' xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15'%3E%3Cpath id='Icon_material-close-2' data-name='Icon material-close' d='M22.5,9.011,20.989,7.5,15,13.489,9.011,7.5,7.5,9.011,13.489,15,7.5,20.989,9.011,22.5,15,16.511,20.989,22.5,22.5,20.989,16.511,15Z' transform='translate(-7.5 -7.5)'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: top left;
+    
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+
+    /* justify-self: flex-end; */
+    margin-left: auto;
+
+
+
+    text-indent: -999px;
+    cursor: pointer;
+
+}
+
+.btn-brown {
+    
+    /* display: inline-block; */
+    /* width: 83px;
+    height: 30px; */
+    background-color: #A24F17;
+    border-radius: 20px;
+
+    margin-top: 40px;
+    
+    padding: 8px 14px;
+    
+    text-align: center;
+    line-height: 30px;
+    
+    text-indent: -999px;
+    cursor: pointer;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 11px;
+    color: #fff;
+}
+
+.login-section{
+    margin-top: 40px;
+
+    height: 30px;   /*ㅠㅠ 왜 이걸해야 높이가..*/
+}
+
+    .login-section>div{
+        margin-left: 36%;
+    }
+
+
+.main-section{
+    padding: 0 20px;
+}
+    .info-header{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    /* ㅠㅠ양쪽에 붙이려다 실패 */
+    /* .info-header:nth-child(1){
+        float:left;
+    }
+    .info-header:nth-child(2){
+        float: right;
+    } */
+
+.img-css-info {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15.502' height='17' viewBox='0 0 15.502 17'%3E%3Cg id='Icon_feather-bell' data-name='Icon feather-bell' transform='translate(-3.5 -2)'%3E%3Cpath id='패스_23' data-name='패스 23' d='M15.752,7.413a4.5,4.5,0,0,0-9,0c0,5.149-2.25,6.62-2.25,6.62H18s-2.25-1.471-2.25-6.62' fill='%23fff' stroke='%237a7a7a' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3Cpath id='패스_24' data-name='패스 24' d='M18.152,31.5a1.588,1.588,0,0,1-2.747,0' transform='translate(-5.527 -14.291)' fill='%23fff' stroke='%237a7a7a' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: left top;
+    
+    display: inline-block;
+    width: 16px;
+    height: 17px;
+}
+
+.h-inline.d-inline span:nth-child(2) {
+    vertical-align: 3px;
+}
+
+
+.span-info {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.btn-orange {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+
+    padding: 4.5px 17.5px;
+
+    border-radius: 10px 0 10px 0;
+    background-color: #D68814;
+    /*ㅠㅠ 살짝 올리고싶은데..  */
+    cursor: pointer;
+}
+
+.div-info-list{
+    margin-top: 10px;
+
+    border-top: 1px solid #707070;
+}
+
+    .div-info-list>article{
+        /**ㅠㅠ그리드어렵/
+        /* 
+        grid-template-columns: repeat(3, 1fr) 0.5fr;
+        grid-template-rows: repeat(3, 1fr); */
+
+        display: grid;
+        /*grid-template-rows: 44px 15px;*/
+        grid-template-columns: repeat(3, 74px) 20px;
+        grid-template-areas: 
+            ". . . ."
+            "title title title btn"
+            "ctt ctt ctt ctt"
+            ". . date date";
+        align-content: space-around;   
+
+
+        min-height: 60px;
+        padding: 13px 0;
+
+        text-align: center;
+        border-bottom: 1px solid #707070;
+
+    }
+        .div-info-list>article>h1, .aside-article-title{
+            grid-area: title;
+           
+
+            text-align: center;
+
+            font-size: 13px;
+            font-weight: normal;
+        }
+
+        .aside-article-ctt{
+            grid-area: ctt;
+        }
+
+        .aside-article-btn{
+            grid-area: btn;
+        }
+
+        .div-info-list .article-in-date{
+            /* bottom: 0; */
+
+            /* flex-shrink: 0;
+            flex-grow: 0; */
+            /* flex: 0 0 14px;grow shrink basis */
+            grid-area: date;
+            justify-content: flex-end;
+
+            display: inline-block;
+
+            font-size: 10px;
+        }
+
+        .article-in-menu-img{
+            display: inline-block;
+            height: 48px;
+            width: 48px;
+
+            /* 동그랗게, 넘어가면 안보이게 */
+            border-radius: 70%;
+            overflow: hidden;
+
+            object-fit: cover;
+        }
+
+        .article-in-menu{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .article-in-price{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 11px;
+        }
+
+.img-btn-show-down {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.992' height='8' viewBox='0 0 13.992 8'%3E%3Cpath id='Icon_ionic-ios-arrow-down' data-name='Icon ionic-ios-arrow-down' d='M13.186,16.835l5.291-5.295a1,1,0,0,1,1.412,0,1.008,1.008,0,0,1,0,1.416l-5.995,6a1,1,0,0,1-1.379.029L6.479,12.961a1,1,0,0,1,1.412-1.416Z' transform='translate(-6.188 -11.246)'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+
+    display: inline-block;
+    width: 13.99px;
+    height: 8px;
+    margin-top: 4px;
+
+    text-indent: -999px;
+    cursor: pointer;
+}
+
+.img-btn-close-up {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13.992' height='8' viewBox='0 0 13.992 8'%3E%3Cpath id='Icon_ionic-ios-arrow-down' data-name='Icon ionic-ios-arrow-down' d='M13.186,13.658l5.291,5.295a1,1,0,0,0,1.412,0,1.008,1.008,0,0,0,0-1.416l-5.995-6a1,1,0,0,0-1.379-.029L6.479,17.532a1,1,0,0,0,1.412,1.416Z' transform='translate(-6.188 -11.246)'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    display: inline-block;
+    width: 13.99px;
+    height: 8px;
+    margin-top: 10px;
+
+    text-indent: -999px;
+    cursor: pointer;
+}
+
+.aside-background>nav{
+    margin-top: 45px;
+
+    padding: 0 20px;
+}
+
+.aside-background>nav>h1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-css-nav{
+    display: inline-block;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.002' height='14' viewBox='0 0 20.002 14'%3E%3Cpath id='Icon_awesome-coffee' data-name='Icon awesome-coffee' d='M6,13.25h6a3,3,0,0,0,3-3h1a4,4,0,1,0,0-8H3.748A.748.748,0,0,0,3,3v7.25A3,3,0,0,0,6,13.25Zm10-9a2,2,0,1,1,0,4H15v-4Zm1.491,12H1.507c-1.488,0-1.906-2-1.125-2H18.61c.781,0,.369,2-1.122,2Z' transform='translate(0.004 -2.25)' fill='%237a7a7a'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 20px;
+    height: 14px;
+
+}
+
+.aside-background>nav>ul{
+    padding-left: 26px;
+    margin: 0;
+}
+
+.aside-background>nav>ul>li>a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    list-style: none;
+    outline: none;
+
+    text-decoration: none;
+    color: #000;
+}
+
+
+.aside-background>nav>ul>li>a:hover, 
+.aside-background>nav>ul>li>a:active {
+    text-decoration: none;
+    color: #000;
+  }

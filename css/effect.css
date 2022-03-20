@@ -1,0 +1,82 @@
+@keyframes rotate-out{
+    from{
+    }
+    
+    20%{
+        height: 5px;
+    }
+    
+    40%{
+
+        transform: rotate(180deg);
+    }
+
+    70%{
+        opacity: 0.9;
+    }
+    to{ 
+        opacity: 0;
+        height: 5px;
+        transform: rotate(360deg) translate(100px);
+    }
+}
+
+.s2 .container{
+    height: 200px;
+    background-color: gray;
+    /* position: relative; */
+}
+
+.s2 .box{
+    transform:scaleY(0.1);
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: yellowgreen;
+}
+
+.s2 .container:hover .box{
+    animation-name: rotate-out;
+    animation-duration: 1s;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+/* -------------------------------- */
+.s1 .container{
+    height: 200px;
+    background-color: gray;
+    /* position: relative; */
+}
+
+.s1 .hand{
+    width:50px;
+    height: 200px;
+    background-color: tomato;
+    margin-left: 200px;
+    /* position: absolute;
+    left:200px;
+    top: 0px; */
+    /* transform:translateX(200px); */
+    transition:transform 6s steps(6, start);
+}
+
+.s1 .box{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: yellowgreen;
+
+    /* transform: rotate(45deg); */
+    /* transform-origin: left top; */
+    /* transition: width 1s, transform 60s; */
+    /* transition-duration: ;
+    transition-property: ;
+    transition-timing-function: ;
+    transition-delay: ; */
+}
+
+.s1 .container:hover .hand{
+    transform: rotate(360deg);
+    /* width:300px; */
+}

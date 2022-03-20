@@ -1,0 +1,20 @@
+.d-none{
+    display: none !important;
+}
+
+.d-block{
+    display: block !important;
+}
+
+.d-flex{
+    display: flex !important;
+}
+
+.bg-color-blue{
+    background-color: blue !important;
+}
+
+.font-family-arial{
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+

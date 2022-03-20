@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>        
+        window.addEventListener("load", function(){
+            var urlInput = document.querySelector(".input-url");
+            var okButton = document.querySelector(".btn-ok");
+                        
+            okButton.onclick = function(){
+
+                var openerUrlInput = opener.document.querySelector("#s15 .input-url");
+                openerUrlInput.value = urlInput.value;
+
+                console.log(urlInput.value);
+
+                window.close();
+            };
+        });
+
+        window.addEventListener("unload", function(){
+            opener.win = null;
+        });
+    </script>
+</head>
+<body>
+    <h1>새로운 페이지</h1>
+    <input type="text" class="input-url">
+    <input type="button" value="적용" class="btn-ok">
+</body>
+</html>

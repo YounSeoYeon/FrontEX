@@ -1,0 +1,90 @@
+
+/* ==== btn content ================================================ */
+
+.btn-cafe-menu-all{
+    /* text style */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+    
+    /* context box style */
+    display: inline-block;
+    /* width: 83px;
+    height: 25px;
+     */
+    padding: 3px 14px;
+    background-color: #D68814;
+    border-radius: 10px 0 10px 0;
+}
+
+.btn-rland-location {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 40px;
+
+    /* context box style */
+    display: inline-block;
+    background-color: rgba(110, 152, 9, 0.65);
+    box-sizing: border-box;
+    width: 173px;
+    height: 40px;
+    padding-left: 40px;
+    /* background-image: url("../images/location.png"); */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='20' viewBox='0 0 14 20'%3E%3Cpath id='Icon_material-place' data-name='Icon material-place' d='M14.5,3a7,7,0,0,0-7,7c0,5.25,7,13,7,13s7-7.75,7-13A7,7,0,0,0,14.5,3Zm0,9.5A2.5,2.5,0,1,1,17,10,2.5,2.5,0,0,1,14.5,12.5Z' transform='translate(-7.5 -3)' fill='%23ffffff'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+}
+
+
+.img-btn-menu{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='17' viewBox='0 0 24 17'%3E%3Cg id='Icon_feather-menu' data-name='Icon feather-menu' transform='translate(1.5 1.5)'%3E%3Cpath id='패스_1' data-name='패스 1' d='M4.5,18h21' transform='translate(-4.5 -11)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cpath id='패스_2' data-name='패스 2' d='M4.5,9h21' transform='translate(-4.5 -9)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cpath id='패스_3' data-name='패스 3' d='M4.5,27h21' transform='translate(-4.5 -13)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    width:24px;
+    height:17px;
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -999px;
+
+}
+
+.arrow-btn{
+
+    /* layout */
+    width: 10px;
+    height: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9.147' height='16' viewBox='0 0 9.147 16'%3E%3Cpath id='Icon_ionic-ios-arrow-back' data-name='Icon ionic-ios-arrow-back' d='M14.008,14.192l6.054-6.049a1.143,1.143,0,1,0-1.619-1.615l-6.859,6.854a1.141,1.141,0,0,0-.033,1.577l6.888,6.9a1.143,1.143,0,1,0,1.619-1.615Z' transform='translate(-11.251 -6.194)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    
+    /* layout-item */
+    display: inline-block;
+
+    /* text-hidden */
+    overflow: hidden;
+    text-indent: -999px;
+
+}
+
+.search-btn{
+
+    /* layout */
+    width: 19px;
+    height: 19px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18.621' height='18.621' viewBox='0 0 18.621 18.621'%3E%3Cg id='Icon_feather-search' data-name='Icon feather-search' transform='translate(-3 -3)'%3E%3Cpath id='패스_17' data-name='패스 17' d='M17.824,11.162A6.662,6.662,0,1,1,11.162,4.5,6.662,6.662,0,0,1,17.824,11.162Z' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cpath id='패스_18' data-name='패스 18' d='M28.62,28.62l-3.645-3.645' transform='translate(-9.12 -9.12)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+
+    /* layout-item */
+    display: inline-block;
+
+    /* text-hidden */
+    overflow: hidden;
+    text-indent: -999px;
+    
+}
+
